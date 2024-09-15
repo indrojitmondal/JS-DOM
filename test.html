@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Siblings</title>
+</head>
+<body>
+    <ul id="menu" class="classatribute" title="Hello">
+        <li>Home</li>
+        <li>Products</li>
+        <li id="current" class="one">Customer Support</li>
+        <li>Careers</li>  
+        <li>Investors</li>
+        <li>News</li>
+        <li>About Us</li>
+    </ul>
+    
+    <script>
+        
+      let current = document.getElementById('menu');
+       x=current.setAttribute('class','check');
+       const attributes= current.getAttributeNames();
+    //    console.log( attributes[0]);
+       for (const attribute of attributes) {
+         
+        console.log(attribute + ': '+ current.getAttribute(attribute));
+
+       }
+       attributes.forEach(attribute => {
+        console.log(attribute + ': ' + current.getAttribute(attribute));
+       });
+        
+      
+    </script>
+</body>
+</html>
