@@ -38,10 +38,20 @@
             </ul>
          </section>
     </main>
+
+    <button id="click1" >Click Me</button>
   
    <script src="js/dom.js"></script>
    <script>
     console.log('adding Js file inside the html file');
+    function clickme(){
+        alert('I am clicked');
+    }
+    const click1 = document.getElementById('click1');
+    
+    click1.addEventListener('click', () => {
+        alert('clicked addEventListener aad')
+    });
    </script>
 </body>
 </html>

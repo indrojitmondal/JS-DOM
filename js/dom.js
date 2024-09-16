@@ -10,10 +10,11 @@ console.log('Hello from Js');
 // const child= test.childNodes;
 // console.log(child.length);
 
-let section1 = document.getElementById('check');
-let pNode=section1.S;
-console.log(pNode);
-
+const test= document.getElementById('test');
+const h1= document.createElement('h1');
+h1.innerText='New heading';
+h1.style.color='green';
+test.appendChild(h1);
 
 
 
