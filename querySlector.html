@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Document Object</h1>
+<h2>The querySelector() Method</h2>
+
+<h3>Add a background color to the first p element:</h3>
+<p>This is a p element.</p>
+<p class="test">This is a p element.</p>
+<p class="test">This is another p element.</p>
+
+<script>
+    let all= document.querySelectorAll('.test');
+    console.log(all);
+    for (const node of all) {
+
+        node.style.backgroundColor ='green';
+        
+    }
+// document.querySelectorAll(".test")[1].style.backgroundColor = "red";
+</script>
+
+</body>
+</html>

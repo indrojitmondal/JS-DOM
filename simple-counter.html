@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Counter</title>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-manrope">
+    <section class="flex justify-center items-center h-screen">
+      <div id="counter" class="card  border border-gray-500 p-6">
+        <p class="border border-gray-500 p-2">Count: <span id="count">0</span></p>
+        
+        <div class="flex space-x-3 p-2">
+          <button class="increase-button  border border-gray-500 p-2">Increase [+]</button>
+          <button class="decrease-button border border-gray-500 p-2">Decrease [-]</button>
+        </div>
+      </div>
+      <br>
+      <div class="p-4 border border-green-500 m-3 ">
+        <button id="reset">Reset</button>
+      </div>
+     
+    </section>
+    <script src="./js/simple-counter.js"></script>
+  </body>
+</html>
